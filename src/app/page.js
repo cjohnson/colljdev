@@ -50,7 +50,7 @@ function HomeHeading() {
             </div>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <Image src="/mugs/mug-homepage.jpg" width={200 * 2} height={300 * 2} alt="Collin Johnson" />
+            <Image src="/mugs/mug-homepage.jpg" width={400} height={600} alt="Collin Johnson" />
           </div>
         </div>
       </section>
