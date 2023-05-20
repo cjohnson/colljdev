@@ -1,10 +1,17 @@
 import Image from "next/image";
 
+const InformationListItem = ({ svg, alt, infoText, width = 24, height = 24 }) => (
+  <div className="flex flex-row space-x-2">
+    <Image src={svg} width={width} height={height} alt={alt} />
+    <p className="text-md">{infoText}</p>
+  </div>
+);
+
 const SocialEngagementLink = ({ href, svg, alt, callToAction, width = 24, height = 24 }) => (
   <a target="_blank" href={ href }>
     <div className="flex flex-row space-x-2">
       <Image src={svg} width={width} height={height} alt={alt} />
-      <p className="text-md">{callToAction}</p>
+      <p className="text-md font-semibold">{callToAction}</p>
     </div>
   </a>
 );
@@ -21,7 +28,15 @@ function HomeHeading() {
             <p className="max-w-2xl mb-6 font-medium text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Collin Johnson is pursuing a degree in Computer Science and Engineering (CSE) at the University of Michigan. He is working an internship at AdvantageCS.
             </p>
-            <div className="flex flex-col space-y-3 items-start">
+            <div className="flex flex-col space-y-6 items-start">
+              <InformationListItem
+                svg="icons/location-sharp.svg"
+                alt="Location icon"
+                infoText="Ann Arbor, Michigan" />
+              <InformationListItem
+                svg="icons/school-sharp.svg"
+                alt="School icon"
+                infoText="University of Michigan" />
               <SocialEngagementLink 
                 href="https://linkedin.com/in/collj/"
                 svg="socials/logo-linkedin.svg"
