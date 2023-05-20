@@ -1,20 +1,6 @@
 import Image from "next/image";
 
-const InformationListItem = ({ svg, alt, infoText, width = 24, height = 24 }) => (
-  <div className="flex flex-row space-x-2">
-    <Image src={svg} width={width} height={height} alt={alt} />
-    <p className="text-md">{infoText}</p>
-  </div>
-);
-
-const SocialEngagementLink = ({ href, svg, alt, callToAction, width = 24, height = 24 }) => (
-  <a target="_blank" href={ href }>
-    <div className="flex flex-row space-x-2">
-      <Image src={svg} width={width} height={height} alt={alt} />
-      <p className="text-md font-semibold">{callToAction}</p>
-    </div>
-  </a>
-);
+import { InformationListItem, InformationListItemLink } from "../components/app/HomeHeadingBriefInformation";
 
 function HomeHeading() {
   return (
@@ -37,12 +23,12 @@ function HomeHeading() {
                 svg="icons/school-sharp.svg"
                 alt="School icon"
                 infoText="University of Michigan" />
-              <SocialEngagementLink 
+              <InformationListItemLink 
                 href="https://linkedin.com/in/collj/"
                 svg="socials/logo-linkedin.svg"
                 alt="LinkedIn logo"
                 callToAction="Connect on LinkedIn" />
-              <SocialEngagementLink
+              <InformationListItemLink
                 href="https://github.com/cjohnson/"
                 svg="socials/logo-github.svg"
                 alt="Github logo"
