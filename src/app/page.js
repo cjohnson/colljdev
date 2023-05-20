@@ -1,5 +1,14 @@
 import Image from "next/image";
 
+const SocialEngagementLink = ({ href, svg, alt, callToAction, width = 24, height = 24 }) => (
+  <a target="_blank" href={ href }>
+    <div className="flex flex-row space-x-2">
+      <Image src={svg} width={width} height={height} alt={alt} />
+      <p className="text-md">{callToAction}</p>
+    </div>
+  </a>
+);
+
 function HomeHeading() {
   return (
     <>
@@ -13,18 +22,16 @@ function HomeHeading() {
               Collin Johnson is pursuing a degree in Computer Science and Engineering (CSE) at the University of Michigan. He is working an internship at AdvantageCS.
             </p>
             <div className="flex flex-col space-y-3 items-start">
-              <a target="_blank" href="https://linkedin.com/in/collj/">
-                <div className="flex flex-row space-x-2">
-                  <Image src="socials/logo-linkedin.svg" width="24" height="24" alt="LinkedIn logo" />
-                  <p className="text-md">Connect on LinkedIn</p>
-                </div>
-              </a>
-              <a target="_blank" href="https://github.com/cjohnson/">
-                <div className="flex flex-row space-x-2">
-                  <Image src="socials/logo-github.svg" width="24" height="24" alt="Github logo" />
-                  <p className="text-md">Follow on Github</p>
-                </div>
-              </a>
+              <SocialEngagementLink 
+                href="https://linkedin.com/in/collj/"
+                svg="socials/logo-linkedin.svg"
+                alt="LinkedIn logo"
+                callToAction="Connect on LinkedIn" />
+              <SocialEngagementLink
+                href="https://github.com/cjohnson/"
+                svg="socials/logo-github.svg"
+                alt="Github logo"
+                callToAction="Follow on Github" />
             </div>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
