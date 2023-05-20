@@ -28,7 +28,7 @@ function HomeHeading() {
             <p className="max-w-2xl mb-6 font-medium text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Collin Johnson is pursuing a degree in Computer Science and Engineering (CSE) at the University of Michigan. He is working an internship at AdvantageCS.
             </p>
-            <div className="flex flex-col space-y-6 items-start">
+            <div className="flex flex-col space-y-3 md:space-y-6 items-start">
               <InformationListItem
                 svg="icons/location-sharp.svg"
                 alt="Location icon"
