@@ -146,27 +146,59 @@ function HomeHeroText() {
   );
 }
 
+const briefInformationList = {
+  text: [
+    {
+      svg: "icons/location-sharp.svg",
+      alt: "Location icon",
+      content: "Ann Arbor, Michigan",
+    },
+    {
+      svg: "icons/school-sharp.svg",
+      alt: "School icon",
+      content: "University of Michigan",
+    },
+  ],
+  links: [
+    {
+      href: "https://linkedin.com/in/collj/",
+      svg: "socials/logo-linkedin.svg",
+      alt: "LinkedIn logo",
+      callToAction: "Connect on LinkedIn",
+    },
+    {
+      href: "https://github.com/cjohnson/",
+      svg: "socials/logo-github.svg",
+      alt: "Github logo",
+      callToAction: "Follow on Github",
+    },
+  ],
+};
+
 function HomeHeroBriefInformationList() {
+  let informationData = briefInformationList;
+
+  let infoText = informationData.text.map(
+    text => <BriefInformationListText
+      key={text.infoText}
+      svg={text.svg}
+      alt={text.alt}
+      infoText={text.content} />
+  );
+
+  let infoLinks = informationData.links.map(
+    link => <BriefInformationListLink
+      key={link.callToAction}
+      href={link.href}
+      svg={link.svg}
+      alt={link.alt}
+      callToAction={link.callToAction} />
+  );
+
   return (
     <div className="home-hero-brief-information flex flex-col space-y-3 md:space-y-5 items-start">
-      <BriefInformationListText
-        svg="icons/location-sharp.svg"
-        alt="Location icon"
-        infoText="Ann Arbor, Michigan" />
-      <BriefInformationListText
-        svg="icons/school-sharp.svg"
-        alt="School icon"
-        infoText="University of Michigan" />
-      <BriefInformationListLink 
-        href="https://linkedin.com/in/collj/"
-        svg="socials/logo-linkedin.svg"
-        alt="LinkedIn logo"
-        callToAction="Connect on LinkedIn" />
-      <BriefInformationListLink
-        href="https://github.com/cjohnson/"
-        svg="socials/logo-github.svg"
-        alt="Github logo"
-        callToAction="Follow on Github" />
+      {infoText}
+      {infoLinks}
     </div>
   );
 }
