@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import { BriefInformationListText, BriefInformationListLink } from "../components/app/BriefInformationListItems";
+import { BriefInformationListText, BriefInformationListLink } from '../components/app/BriefInformationListItems';
 
-import briefInformationList from "../data/briefInformation.json";
-import resumeData from "../data/resume.json";
+import briefInformationList from '../data/briefInformation.json';
+import resumeData from '../data/resume.json';
 
 export default function Home() {
   return (
@@ -37,7 +37,7 @@ function ResumeFeature({ position, relation, organization, timePeriod, descripti
 }
 
 function ResumeSection({ title, features }) {
-  let featuresList = features.map(
+  const featuresList = features.map(
     feature => <ResumeFeature
       key={feature.position}
       position={feature.position}
@@ -60,10 +60,10 @@ function ResumeSection({ title, features }) {
 }
 
 function Resume() {
-  let sections = resumeData.sections.map(
+  const sections = resumeData.sections.map(
     section => <ResumeSection
       key={section.title}
-      title={section.title} 
+      title={section.title}
       features={section.features} />
   );
 
@@ -105,7 +105,7 @@ function HomeHeroText() {
 }
 
 function HomeHeroBriefInformationList() {
-  let infoText = briefInformationList.text.map(
+  const infoText = briefInformationList.text.map(
     text => <BriefInformationListText
       key={text.infoText}
       svg={text.svg}
@@ -113,7 +113,7 @@ function HomeHeroBriefInformationList() {
       infoText={text.content} />
   );
 
-  let infoLinks = briefInformationList.links.map(
+  const infoLinks = briefInformationList.links.map(
     link => <BriefInformationListLink
       key={link.callToAction}
       href={link.href}

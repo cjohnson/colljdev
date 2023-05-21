@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export const BriefInformationListText = ({ svg, alt, infoText, width = 24, height = 24 }) => (
   <div className="information-list-text flex flex-row space-x-2">
