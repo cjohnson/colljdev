@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import { BriefInformationListText, BriefInformationListLink } from "../components/app/BriefInformationListItems";
+import { BriefInformationListText, BriefInformationListLink } from '../components/app/BriefInformationListItems';
 
-import briefInformationList from "../data/briefInformation.json";
-import resumeData from "../data/resume.json";
+import briefInformationList from '../data/briefInformation.json';
+import resumeData from '../data/resume.json';
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ function ResumeSectionTitle({ title }) {
 
 function ResumeFeature({ position, relation, organization, timePeriod, description }) {
   return (
-    <li className="resume-feature mb-10 ml-4">
+    <li key={position} className="resume-feature mb-10 ml-4">
       <div className="vertical-timeline-point absolute w-3 lg:w-4 h-3 lg:h-4 bg-gray-300 rounded-full mt-1.5 lg:mt-2 -left-[6.57px] lg:-left-[8.88px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
       <h2 className="resume-feature-title sm:text-2xl lg:text-2xl tracking-tight font-regular text-gray-900 dark:text-white">
         <span className="font-bold">{position}</span> {relation} <span className="font-bold">{organization}</span>
@@ -37,7 +37,7 @@ function ResumeFeature({ position, relation, organization, timePeriod, descripti
 }
 
 function ResumeSection({ title, features }) {
-  let featuresList = features.map(
+  const featuresList = features.map(
     feature => <ResumeFeature
       key={feature.position}
       position={feature.position}
@@ -60,10 +60,10 @@ function ResumeSection({ title, features }) {
 }
 
 function Resume() {
-  let sections = resumeData.sections.map(
+  const sections = resumeData.sections.map(
     section => <ResumeSection
       key={section.title}
-      title={section.title} 
+      title={section.title}
       features={section.features} />
   );
 
@@ -105,7 +105,7 @@ function HomeHeroText() {
 }
 
 function HomeHeroBriefInformationList() {
-  let infoText = briefInformationList.text.map(
+  const infoText = briefInformationList.text.map(
     text => <BriefInformationListText
       key={text.infoText}
       svg={text.svg}
@@ -113,7 +113,7 @@ function HomeHeroBriefInformationList() {
       infoText={text.content} />
   );
 
-  let infoLinks = briefInformationList.links.map(
+  const infoLinks = briefInformationList.links.map(
     link => <BriefInformationListLink
       key={link.callToAction}
       href={link.href}
