@@ -19,7 +19,7 @@ function ResumeSectionTitle({ title }) {
   );
 }
 
-function ResumeFeature({ position, relation, organization, timePeriod }) {
+function ResumeFeature({ position, relation, organization, timePeriod, description }) {
   return (
     <li class="mb-10 ml-4">
       <div class="absolute w-3 lg:w-4 h-3 lg:h-4 bg-gray-300 rounded-full mt-1.5 lg:mt-2.5 -left-2 lg:-left-2.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -27,6 +27,7 @@ function ResumeFeature({ position, relation, organization, timePeriod }) {
         <span className="font-bold">{position}</span> {relation} <span className="font-bold">{organization}</span>
       </h2>
       <h3 className="mb-2 text-md tracking-tight font-light text-gray-500 dark:text-white">{timePeriod}</h3>
+      {description !== null && <p>{description}</p>}
     </li>
   );
 }
@@ -44,21 +45,15 @@ function ResumeSection() {
                 relation="at"
                 organization="AdvantageCS"
                 timePeriod="May 2023 - Present" />
-              <li class="mb-10 ml-4">
-                <div class="absolute w-3 lg:w-4 h-3 lg:h-4 bg-gray-300 rounded-full mt-1.5 lg:mt-2.5 -left-2 lg:-left-2.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <h2 className="sm:text-2xl lg:text-3xl tracking-tight font-regular text-gray-900 dark:text-white">
-                  <span className="font-bold">Help Desk Support Specialist</span> at <span className="font-bold">ICPSR</span>
-                </h2>
-                <h3 className="mb-2 text-md tracking-tight font-light text-gray-500 dark:text-white">
-                  June 2022 - April 2023
-                </h3>
-                <p className="text-md font-normal">
-                  Started as a technical support specialist helping professors use the lecture hall technology effectively. 
+              <ResumeFeature
+                position="Help Desk Support Specialist"
+                relation="at"
+                organization="ICPSR"
+                timePeriod="June 2022 - April 2023"
+                description="Started as a technical support specialist helping professors use the lecture hall technology effectively. 
                   Quickly transitioned from tech support to software development, developing a dedicated full-stack solution to 
                   analyze the program’s registration data using a MySQL database, Node.js backend, and a Vue.js frontend, which 
-                  was eventually re-written in React.js.
-                </p>
-              </li>
+                  was eventually re-written in React.js." />
             </ol>
           </div>
         </div>
