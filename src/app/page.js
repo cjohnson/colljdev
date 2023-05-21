@@ -38,6 +38,23 @@ function ResumeSection() {
       <section className="resume bg-white dark:bg-gray-900">
         <div className="resume-section-container py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="resume-section max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+            <ResumeSectionTitle title="Education" />
+            <ol className="resume-features ml-3 relative border-l-2 border-gray-300 dark:border-gray-700">
+              <ResumeFeature 
+                organization="The University of Michigan College of Engineering" 
+                timePeriod="August 2022 - Present (Expected Graduation December 2025)"
+                description="Pursuing a Bachelor of Science in Engineering in Computer Science and Engineering." />
+              <ResumeFeature 
+                organization="Dexter High School"
+                timePeriod="September 2018 - June 2022" />
+              <ResumeFeature 
+                organization="Washtenaw Community College" 
+                timePeriod="June 2021 - June 2022 (Dual-enrollment with High School)" />
+            </ol>
+          </div>
+        </div>
+        <div className="resume-section-container py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div className="resume-section max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
             <ResumeSectionTitle title="Work Experience" />
             <ol className="resume-features ml-3 relative border-l-2 border-gray-300 dark:border-gray-700">
               <ResumeFeature
@@ -54,6 +71,45 @@ function ResumeSection() {
                   Quickly transitioned from tech support to software development, developing a dedicated full-stack solution to 
                   analyze the program’s registration data using a MySQL database, Node.js backend, and a Vue.js frontend, which 
                   was eventually re-written in React.js." />
+            </ol>
+          </div>
+        </div>
+        <div className="resume-section-container py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div className="resume-section max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+            <ResumeSectionTitle title="School Projects and Activities" />
+            <ol className="resume-features ml-3 relative border-l-2 border-gray-300 dark:border-gray-700">
+              <ResumeFeature
+                position="Team Member"
+                relation="on"
+                organization="DTDC (Michigan Engineering 100 Team)"
+                timePeriod="August 2022 - December 2022"
+                description="Proposed and presented a  project involving autonomous quadcopter drones. Used Python and Git 
+                  collaboratively to deliver a marketable product." />
+              <ResumeFeature
+                position="Trombone Marcher"
+                relation="in the"
+                organization="Michigan Marching Band"
+                timePeriod="August 2022 - Present" />
+              <ResumeFeature
+                position="Programming Student Lead"
+                relation="on"
+                organization="Dreadbots (FRC 3656)"
+                timePeriod="June 2021 - June 2022" />
+              <ResumeFeature
+                position="Programmer"
+                relation="on"
+                organization="Dreadbots (FRC 3656)"
+                timePeriod="September 2018 - June 2022" />
+              <ResumeFeature
+                position="Primary Robot Driver"
+                relation="on"
+                organization="Dreadbots (FRC 3656)"
+                timePeriod="February 2022 - June 2022" />
+              <ResumeFeature
+                position="Strategy/Scouting Student Lead"
+                relation="on"
+                organization="Dreadbots (FRC 3656)"
+                timePeriod="June 2019 - June 2021" />
             </ol>
           </div>
         </div>
