@@ -10,7 +10,7 @@ export default function HomeHero() {
       <div className="home-hero-content grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="home-hero-main-content mr-auto place-self-start lg:col-span-7 md:pl-6">
           <HomeHeroText />
-          <HomeHeroBriefInformationList />
+          <HomeHeroBriefInformationList infoData={briefInformationList} />
         </div>
         <HomeHeroImage />
       </div>
@@ -32,8 +32,8 @@ function HomeHeroText() {
   );
 }
 
-function HomeHeroBriefInformationList() {
-  const infoText = briefInformationList.text.map(
+function HomeHeroBriefInformationList({ infoData }) {
+  const infoText = infoData.text.map(
     text => <BriefInformationListText
       key={text.infoText}
       svg={text.svg}
@@ -41,7 +41,7 @@ function HomeHeroBriefInformationList() {
       infoText={text.content} />
   );
 
-  const infoLinks = briefInformationList.links.map(
+  const infoLinks = infoData.links.map(
     link => <BriefInformationListLink
       key={link.callToAction}
       href={link.href}
