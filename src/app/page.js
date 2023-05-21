@@ -6,8 +6,51 @@ export default function Home() {
   return (
     <>
       <HomeHero />
+      <ResumeSection />
     </>
   )
+}
+
+function ResumeSection() {
+  return (
+    <>
+      <section className="resume bg-white dark:bg-gray-900">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+            <div className="pb-5">
+              <h1 className="text-3xl">Work Experience</h1>
+            </div>
+            <ol className="ml-3 relative border-l-2 border-gray-300 dark:border-gray-700">
+              <li class="mb-10 ml-4">
+                <div class="absolute w-3 lg:w-4 h-3 lg:h-4 bg-gray-300 rounded-full mt-1.5 lg:mt-2.5 -left-2 lg:-left-2.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <h2 className="sm:text-2xl lg:text-3xl tracking-tight font-regular text-gray-900 dark:text-white">
+                  <span className="font-bold">Software Development Trainee</span> at <span className="font-bold">AdvantageCS</span>
+                </h2>
+                <h3 className="mb-2 text-md tracking-tight font-light text-gray-500 dark:text-white">
+                  May 2023 - Present
+                </h3>
+              </li>
+              <li class="mb-10 ml-4">
+                <div class="absolute w-3 lg:w-4 h-3 lg:h-4 bg-gray-300 rounded-full mt-1.5 lg:mt-2.5 -left-2 lg:-left-2.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <h2 className="sm:text-2xl lg:text-3xl tracking-tight font-regular text-gray-900 dark:text-white">
+                  <span className="font-bold">Help Desk Support Specialist</span> at <span className="font-bold">ICPSR</span>
+                </h2>
+                <h3 className="mb-2 text-md tracking-tight font-light text-gray-500 dark:text-white">
+                  June 2022 - April 2023
+                </h3>
+                <p className="text-md font-normal">
+                  Started as a technical support specialist helping professors use the lecture hall technology effectively. 
+                  Quickly transitioned from tech support to software development, developing a dedicated full-stack solution to 
+                  analyze the program’s registration data using a MySQL database, Node.js backend, and a Vue.js frontend, which 
+                  was eventually re-written in React.js.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 function HomeHero() {
