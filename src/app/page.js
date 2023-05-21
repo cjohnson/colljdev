@@ -14,7 +14,7 @@ export default function Home() {
 function ResumeSectionTitle({ title }) {
   return (
     <div className="resume-section-title pb-5">
-      <h1 className="text-2xl lg:text-3xl">{title}</h1>
+      <h1 className="text-2xl lg:text-3xl lg:text-gray-700">{title}</h1>
     </div>
   );
 }
