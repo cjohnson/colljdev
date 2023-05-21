@@ -21,9 +21,9 @@ function ResumeSectionTitle({ title }) {
 
 function ResumeFeature({ position, relation, organization, timePeriod, description }) {
   return (
-    <li class="resume-feature mb-10 ml-4">
-      <div class="vertical-timeline-point absolute w-3 lg:w-4 h-3 lg:h-4 bg-gray-300 rounded-full mt-1.5 lg:mt-2.5 -left-2 lg:-left-2.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-      <h2 className="resume-feature-title sm:text-2xl lg:text-3xl tracking-tight font-regular text-gray-900 dark:text-white">
+    <li className="resume-feature mb-10 ml-4">
+      <div className="vertical-timeline-point absolute w-3 lg:w-4 h-3 lg:h-4 bg-gray-300 rounded-full mt-1.5 lg:mt-2 -left-2 lg:-left-2.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+      <h2 className="resume-feature-title sm:text-2xl lg:text-2xl tracking-tight font-regular text-gray-900 dark:text-white">
         <span className="font-bold">{position}</span> {relation} <span className="font-bold">{organization}</span>
       </h2>
       <h3 className="resume-feature-time-period mb-2 tracking-tight font-light text-gray-500 dark:text-white">{timePeriod}</h3>
