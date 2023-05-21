@@ -13,7 +13,7 @@ export default function Home() {
 
 function ResumeSectionTitle({ title }) {
   return (
-    <div className="pb-5">
+    <div className="resume-section-title pb-5">
       <h1 className="text-3xl">{title}</h1>
     </div>
   );
@@ -21,13 +21,13 @@ function ResumeSectionTitle({ title }) {
 
 function ResumeFeature({ position, relation, organization, timePeriod, description }) {
   return (
-    <li class="mb-10 ml-4">
-      <div class="absolute w-3 lg:w-4 h-3 lg:h-4 bg-gray-300 rounded-full mt-1.5 lg:mt-2.5 -left-2 lg:-left-2.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-      <h2 className="sm:text-2xl lg:text-3xl tracking-tight font-regular text-gray-900 dark:text-white">
+    <li class="resume-feature mb-10 ml-4">
+      <div class="vertical-timeline-point absolute w-3 lg:w-4 h-3 lg:h-4 bg-gray-300 rounded-full mt-1.5 lg:mt-2.5 -left-2 lg:-left-2.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+      <h2 className="resume-feature-title sm:text-2xl lg:text-3xl tracking-tight font-regular text-gray-900 dark:text-white">
         <span className="font-bold">{position}</span> {relation} <span className="font-bold">{organization}</span>
       </h2>
-      <h3 className="mb-2 text-md tracking-tight font-light text-gray-500 dark:text-white">{timePeriod}</h3>
-      {description !== null && <p>{description}</p>}
+      <h3 className="resume-feature-time-period mb-2 tracking-tight font-light text-gray-500 dark:text-white">{timePeriod}</h3>
+      {description !== null && <p className="resume-feature-description font-normal text-gray-500 dark:text-white">{description}</p>}
     </li>
   );
 }
@@ -36,10 +36,10 @@ function ResumeSection() {
   return (
     <>
       <section className="resume bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+        <div className="resume-section-container py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div className="resume-section max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
             <ResumeSectionTitle title="Work Experience" />
-            <ol className="ml-3 relative border-l-2 border-gray-300 dark:border-gray-700">
+            <ol className="resume-features ml-3 relative border-l-2 border-gray-300 dark:border-gray-700">
               <ResumeFeature
                 position="Software Development Trainee"
                 relation="at"
