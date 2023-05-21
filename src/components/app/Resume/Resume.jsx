@@ -33,19 +33,13 @@ function ResumeSection({ title, features }) {
   return (
     <div className="resume-section-container py-2 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6">
       <div className="resume-section max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-        <ResumeSectionTitle title={title} />
+        <div className="resume-section-title pb-5">
+          <h1 className="text-2xl lg:text-3xl lg:text-gray-700">{title}</h1>
+        </div>
         <ol className="resume-features ml-3 relative border-l-2 border-gray-300 dark:border-gray-700">
           {featuresList}
         </ol>
       </div>
-    </div>
-  );
-}
-
-function ResumeSectionTitle({ title }) {
-  return (
-    <div className="resume-section-title pb-5">
-      <h1 className="text-2xl lg:text-3xl lg:text-gray-700">{title}</h1>
     </div>
   );
 }
