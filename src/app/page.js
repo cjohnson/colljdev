@@ -11,15 +11,21 @@ export default function Home() {
   )
 }
 
+function ResumeSectionTitle() {
+  return (
+    <div className="pb-5">
+      <h1 className="text-3xl">Work Experience</h1>
+    </div>
+  );
+}
+
 function ResumeSection() {
   return (
     <>
       <section className="resume bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-            <div className="pb-5">
-              <h1 className="text-3xl">Work Experience</h1>
-            </div>
+            <ResumeSectionTitle />
             <ol className="ml-3 relative border-l-2 border-gray-300 dark:border-gray-700">
               <li class="mb-10 ml-4">
                 <div class="absolute w-3 lg:w-4 h-3 lg:h-4 bg-gray-300 rounded-full mt-1.5 lg:mt-2.5 -left-2 lg:-left-2.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
