@@ -1,5 +1,7 @@
 import React from 'react';
 
+import FooterLink from './FooterLink';
+
 export default function Footer() {
   return (
     <footer className="bg-white rounded-lg dark:bg-gray-800">
@@ -14,13 +16,5 @@ export default function Footer() {
         </ul>
       </div>
     </footer>
-  );
-}
-
-function FooterLink({ text, href }) {
-  return (
-    <li className="page-footer-link">
-      <a target="_blank" href={href} className="mr-4 hover:underline md:mr-6 ">{text}</a>
-    </li>
   );
 }
