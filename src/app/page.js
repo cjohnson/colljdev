@@ -2,6 +2,8 @@ import Image from "next/image";
 
 import { BriefInformationListText, BriefInformationListLink } from "../components/app/BriefInformationListItems";
 
+import briefInformationList from "../data/briefInformation.json";
+
 export default function Home() {
   return (
     <>
@@ -145,35 +147,6 @@ function HomeHeroText() {
     </>
   );
 }
-
-const briefInformationList = {
-  text: [
-    {
-      svg: "icons/location-sharp.svg",
-      alt: "Location icon",
-      content: "Ann Arbor, Michigan",
-    },
-    {
-      svg: "icons/school-sharp.svg",
-      alt: "School icon",
-      content: "University of Michigan",
-    },
-  ],
-  links: [
-    {
-      href: "https://linkedin.com/in/collj/",
-      svg: "socials/logo-linkedin.svg",
-      alt: "LinkedIn logo",
-      callToAction: "Connect on LinkedIn",
-    },
-    {
-      href: "https://github.com/cjohnson/",
-      svg: "socials/logo-github.svg",
-      alt: "Github logo",
-      callToAction: "Follow on Github",
-    },
-  ],
-};
 
 function HomeHeroBriefInformationList() {
   let informationData = briefInformationList;
