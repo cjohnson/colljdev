@@ -15,8 +15,6 @@ module.exports = {
      * Severity: 2 == error, 1 == warning, 0 == off.
      */
   rules: {
-    "@typescript-eslint/no-unused-vars": [2, {args: "none"}],
-    "@typescript-eslint/consistent-type-imports": [2, {disallowTypeAnnotations: false}],
     /**
      * Enforced rules
      */
@@ -27,7 +25,6 @@ module.exports = {
         "allowTemplateLiterals": true
     }],
     "no-extra-semi": 2,
-    "@typescript-eslint/semi": [2],
     "comma-style": [2, "last"],
     "wrap-iife": [2, "inside"],
     "spaced-comment": [2, "always", {
@@ -100,23 +97,15 @@ module.exports = {
         "after": true,
         "before": true
     }],
-    "@typescript-eslint/func-call-spacing": 2,
-    "@typescript-eslint/type-annotation-spacing": 2,
 
     // file whitespace
     "no-multiple-empty-lines": [2, {"max": 2}],
     "no-mixed-spaces-and-tabs": 2,
     "no-trailing-spaces": 2,
     "linebreak-style": [ process.platform === "win32" ? 0 : 2, "unix" ],
-    "indent": [2, 2, { "SwitchCase": 1, "CallExpression": {"arguments": 2}, "MemberExpression": 2 }],
+    "indent": [2, 2, { "SwitchCase": 1, "CallExpression": {"arguments": 1}, "MemberExpression": 1, "VariableDeclarator": 1 }],
     "key-spacing": [2, {
         "beforeColon": false
-    }],
-
-    // copyright
-    "notice/notice": [2, {
-        "mustMatch": "Copyright",
-        "templateFile": require("path").join(__dirname, "utils", "copyright.js"),
     }],
   }
 };
