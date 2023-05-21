@@ -138,6 +138,14 @@ function HomeHeroImage() {
   );
 }
 
+function FooterLink({ text, href }) {
+  return (
+    <li>
+      <a target="_blank" href={href} className="mr-4 hover:underline md:mr-6 ">{text}</a>
+    </li>
+  );
+}
+
 function Footer() {
   return (
     <footer className="bg-white rounded-lg dark:bg-gray-800">
@@ -146,15 +154,9 @@ function Footer() {
           Collin Johnson 2023 - This page is Open Source.
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-          <li>
-            <a target="_blank" href="https://github.com/cjohnson/colljdev/" className="mr-4 hover:underline md:mr-6 ">Source Code</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://github.com/cjohnson/" className="mr-4 hover:underline md:mr-6">Github</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://linkedin.com/in/collj/" className="mr-4 hover:underline md:mr-6">LinkedIn</a>
-          </li>
+          <FooterLink text="Source Code" href="https://github.com/cjohnson/colljdev/" />
+          <FooterLink text="Github" href="https://github.com/cjohnson/" />
+          <FooterLink text="LinkedIn" href="https://linkedin.com/in/collj/" />
         </ul>
       </div>
     </footer>
