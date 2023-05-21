@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { InformationListItem, InformationListItemLink } from "../components/app/HomeHeadingBriefInformation";
+import { BriefInformationListText, BriefInformationListLink } from "../components/app/BriefInformationListItems";
 
 export default function Home() {
   return (
@@ -41,20 +41,20 @@ function HomeHeroText() {
 function HomeHeroBriefInformationList() {
   return (
     <div className="home-hero-brief-information flex flex-col space-y-3 md:space-y-5 items-start">
-      <InformationListItem
+      <BriefInformationListText
         svg="icons/location-sharp.svg"
         alt="Location icon"
         infoText="Ann Arbor, Michigan" />
-      <InformationListItem
+      <BriefInformationListText
         svg="icons/school-sharp.svg"
         alt="School icon"
         infoText="University of Michigan" />
-      <InformationListItemLink 
+      <BriefInformationListLink 
         href="https://linkedin.com/in/collj/"
         svg="socials/logo-linkedin.svg"
         alt="LinkedIn logo"
         callToAction="Connect on LinkedIn" />
-      <InformationListItemLink
+      <BriefInformationListLink
         href="https://github.com/cjohnson/"
         svg="socials/logo-github.svg"
         alt="Github logo"
