@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { BriefInformationListText, BriefInformationListLink } from '../BriefInformationListItems';
-import briefInformationList from '../../../data/briefInformation.json';
+import { BriefInformationListText, BriefInformationListLink } from '@/components/app/BriefInformationListItems';
+import briefInformationList from '@/data/briefInformation.json';
 
 export default function HomeHero() {
   return (
