@@ -10,6 +10,7 @@ export default function Home() {
     <>
       <HomeHero />
       <Resume />
+      <Footer />
     </>
   )
 }
@@ -134,5 +135,28 @@ function HomeHeroImage() {
     <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
       <Image src="/mugs/mug-homepage.jpg" width={400} height={600} alt="Collin Johnson" />
     </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="bg-white rounded-lg dark:bg-gray-800">
+      <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          Collin Johnson 2023 - This page is Open Source.
+        </span>
+        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+            <a target="_blank" href="https://github.com/cjohnson/colljdev/" className="mr-4 hover:underline md:mr-6 ">Source Code</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/cjohnson/" className="mr-4 hover:underline md:mr-6">Github</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://linkedin.com/in/collj/" className="mr-4 hover:underline md:mr-6">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   );
 }
