@@ -11,7 +11,7 @@ export const BriefInformationListLink = ({ href, svg, alt, callToAction, width =
   <a className="information-list-link" target="_blank" href={href}>
     <div className="information-list-link-content flex flex-row space-x-2">
       <Image src={svg} width={width} height={height} alt={alt} />
-      <p className="text-md font-semibold">{callToAction}</p>
+      <p className="text-md font-semibold text-blue-600 lg:text-blue-800">{callToAction}</p>
     </div>
   </a>
 );
