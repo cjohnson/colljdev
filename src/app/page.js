@@ -104,9 +104,7 @@ function HomeHeroText() {
 }
 
 function HomeHeroBriefInformationList() {
-  let informationData = briefInformationList;
-
-  let infoText = informationData.text.map(
+  let infoText = briefInformationList.text.map(
     text => <BriefInformationListText
       key={text.infoText}
       svg={text.svg}
@@ -114,7 +112,7 @@ function HomeHeroBriefInformationList() {
       infoText={text.content} />
   );
 
-  let infoLinks = informationData.links.map(
+  let infoLinks = briefInformationList.links.map(
     link => <BriefInformationListLink
       key={link.callToAction}
       href={link.href}
