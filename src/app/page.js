@@ -36,7 +36,7 @@ function ResumeSection() {
   return (
     <>
       <section className="resume bg-white dark:bg-gray-900">
-        <div className="resume-section-container py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="resume-section-container py-2 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6">
           <div className="resume-section max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
             <ResumeSectionTitle title="Education" />
             <ol className="resume-features ml-3 relative border-l-2 border-gray-300 dark:border-gray-700">
@@ -53,7 +53,7 @@ function ResumeSection() {
             </ol>
           </div>
         </div>
-        <div className="resume-section-container py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="resume-section-container py-2 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6">
           <div className="resume-section max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
             <ResumeSectionTitle title="Work Experience" />
             <ol className="resume-features ml-3 relative border-l-2 border-gray-300 dark:border-gray-700">
@@ -74,7 +74,7 @@ function ResumeSection() {
             </ol>
           </div>
         </div>
-        <div className="resume-section-container py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="resume-section-container py-2 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6">
           <div className="resume-section max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
             <ResumeSectionTitle title="School Projects and Activities" />
             <ol className="resume-features ml-3 relative border-l-2 border-gray-300 dark:border-gray-700">
