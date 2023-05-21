@@ -32,7 +32,7 @@ function HomeHeroText() {
       </h1>
       <p className="home-hero-subtitle max-w-2xl mb-6 font-medium text-gray-500 lg:mb-6 md:text-lg lg:text-xl dark:text-gray-400">
         Collin Johnson is pursuing a degree in Computer Science and Engineering (CSE) at the University of Michigan College of Engineering.
-        He is working an internship at AdvantageCS.
+        He is a Software Development Trainee intern at AdvantageCS.
       </p>
     </>
   );
