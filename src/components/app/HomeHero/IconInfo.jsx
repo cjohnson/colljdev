@@ -2,8 +2,8 @@ import React from 'react';
 
 import { IconLabel, IconLink } from './BriefInformationListItems';
 
-export default function HomeHeroBriefInformation({ infoData }) {
-  const iconLabels = infoData.text.map(
+export default function IconInfo({ data }) {
+  const iconLabels = data.labels.map(
     text => <IconLabel
       key={text.infoText}
       svg={text.svg}
@@ -11,7 +11,7 @@ export default function HomeHeroBriefInformation({ infoData }) {
       infoText={text.content} />
   );
 
-  const iconLinks = infoData.links.map(
+  const iconLinks = data.links.map(
     link => <IconLink
       key={link.callToAction}
       href={link.href}
