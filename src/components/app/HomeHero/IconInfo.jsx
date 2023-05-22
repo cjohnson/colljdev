@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { IconLabel, IconLink } from './BriefInformationListItems';
+import IconLabel from './IconLabel';
+import IconLink from './IconLink';
 
 export default function IconInfo({ data }) {
   const iconLabels = data.labels.map(
