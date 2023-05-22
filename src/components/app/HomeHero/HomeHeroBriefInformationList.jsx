@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { BriefInformationListText, BriefInformationListLink } from '@/components/app/BriefInformationListItems';
 
 export default function HomeHeroBriefInformationList({ infoData }) {
