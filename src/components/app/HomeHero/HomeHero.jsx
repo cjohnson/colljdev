@@ -18,7 +18,9 @@ export default function HomeHero() {
           </p>
           <HomeHeroBriefInformationList infoData={briefInformationList} />
         </div>
-        <HomeHeroImage />
+        <div className="home-hero-image hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <Image src="/mugs/mug-homepage.jpg" width={400} height={600} alt="Collin Johnson" />
+        </div>
       </div>
     </section>
   );
@@ -46,14 +48,6 @@ function HomeHeroBriefInformationList({ infoData }) {
     <div className="home-hero-brief-information flex flex-col space-y-3 md:space-y-5 items-start">
       {infoText}
       {infoLinks}
-    </div>
-  );
-}
-
-function HomeHeroImage() {
-  return (
-    <div className="home-hero-image hidden lg:mt-0 lg:col-span-5 lg:flex">
-      <Image src="/mugs/mug-homepage.jpg" width={400} height={600} alt="Collin Johnson" />
     </div>
   );
 }
