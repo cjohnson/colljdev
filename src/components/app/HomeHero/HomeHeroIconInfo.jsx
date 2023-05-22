@@ -3,7 +3,7 @@ import React from 'react';
 import IconLabel from './IconLabel';
 import IconLink from './IconLink';
 
-export default function IconInfo({ data }) {
+export default function HomeHeroIconInfo({ data }) {
   const iconLabels = data.labels.map(
     text => <IconLabel
       key={text.infoText}

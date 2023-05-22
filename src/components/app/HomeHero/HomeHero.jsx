@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import IconInfo from './IconInfo';
+import HomeHeroIconInfo from './HomeHeroIconInfo';
 
 import iconInfoData from '@/data/iconInfo.json';
 
@@ -17,7 +17,7 @@ export default function HomeHero() {
             Collin Johnson is pursuing a degree in Computer Science and Engineering (CSE) at the University of Michigan College of Engineering.
             He is a Software Development Trainee intern at AdvantageCS.
           </p>
-          <IconInfo data={iconInfoData} />
+          <HomeHeroIconInfo data={iconInfoData} />
         </div>
         <div className="home-hero-image hidden lg:mt-0 lg:col-span-5 lg:flex">
           <Image src="/mugs/mug-homepage.jpg" width={400} height={600} alt="Collin Johnson" />
