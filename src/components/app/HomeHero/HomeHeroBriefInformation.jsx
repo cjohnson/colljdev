@@ -1,18 +1,18 @@
 import React from 'react';
 
-import { BriefInformationListText, BriefInformationListLink } from './BriefInformationListItems';
+import { IconLabel, IconLink } from './BriefInformationListItems';
 
 export default function HomeHeroBriefInformation({ infoData }) {
-  const infoText = infoData.text.map(
-    text => <BriefInformationListText
+  const iconLabels = infoData.text.map(
+    text => <IconLabel
       key={text.infoText}
       svg={text.svg}
       alt={text.alt}
       infoText={text.content} />
   );
 
-  const infoLinks = infoData.links.map(
-    link => <BriefInformationListLink
+  const iconLinks = infoData.links.map(
+    link => <IconLink
       key={link.callToAction}
       href={link.href}
       svg={link.svg}
@@ -22,8 +22,8 @@ export default function HomeHeroBriefInformation({ infoData }) {
 
   return (
     <div className="home-hero-brief-information flex flex-col space-y-3 md:space-y-5 items-start">
-      {infoText}
-      {infoLinks}
+      {iconLabels}
+      {iconLinks}
     </div>
   );
 }
