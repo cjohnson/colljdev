@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Image from 'next/image';
 
 export const BriefInformationListText = ({ svg, alt, infoText, width = 24, height = 24 }) => (

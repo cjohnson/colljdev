@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { BriefInformationListText, BriefInformationListLink } from '@/components/app/BriefInformationListItems';
+import { BriefInformationListText, BriefInformationListLink } from './BriefInformationListItems';
 
-export default function HomeHeroBriefInformationList({ infoData }) {
+export default function HomeHeroBriefInformation({ infoData }) {
   const infoText = infoData.text.map(
     text => <BriefInformationListText
       key={text.infoText}
