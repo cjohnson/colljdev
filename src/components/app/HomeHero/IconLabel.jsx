@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function IconLabel({ icon, infoText, width = 24, height = 24 }) {

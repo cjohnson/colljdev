@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function IconLink({ href, icon, callToAction, width = 24, height = 24 }) {
