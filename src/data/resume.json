@@ -5,8 +5,9 @@
       "features": [
         {
           "organization": "The University of Michigan College of Engineering",
-          "timePeriod": "August 2022 - Present (Expected Graduation December 2025)",
-          "description": "Pursuing a Bachelor of Science in Engineering in Computer Science and Engineering."
+          "timePeriod": "August 2022 - Present",
+          "description": "Pursuing a Bachelor of Science in Engineering in Computer Science and Engineering.",
+          "extras": "Expected Graduation December 2025"
         },
         {
           "organization": "Dexter High School",
@@ -40,41 +41,46 @@
       "title": "School Projects and Activities",
       "features": [
         {
-          "position": "Team Member",
-          "relation": "on",
-          "organization": "DTDC (Michigan Engineering 100 Team)",
-          "timePeriod": "August 2022 - December 2022",
-          "description": "Proposed and presented a  project involving autonomous quadcopter drones. Used Python and Git collaboratively to deliver a marketable product."
-        },
-        {
           "position": "Trombone Marcher",
           "relation": "in the",
           "organization": "Michigan Marching Band",
           "timePeriod": "August 2022 - Present"
         },
         {
+          "position": "Team Member",
+          "relation": "on",
+          "organization": "DTDC",
+          "timePeriod": "August 2022 - December 2022",
+          "description": "Proposed and presented a  project involving autonomous quadcopter drones. Used Python and Git collaboratively to deliver a markeable product.",
+          "extras": "Michigan Engineering 100 Team"
+        },
+        {
           "position": "Programming Student Lead",
           "relation": "on",
-          "organization": "Dreadbots (FRC 3656)",
-          "timePeriod": "June 2021 - June 2022"
+          "organization": "Dreadbots",
+          "timePeriod": "June 2021 - June 2022",
+          "extras": "First Robotics Competition Team 3656"
         },
         {
           "position": "Programmer",
           "relation": "on",
-          "organization": "Dreadbots (FRC 3656)",
-          "timePeriod": "September 2018 - June 2022"
+          "organization": "Dreadbots",
+          "timePeriod": "September 2018 - June 2022",
+          "extras": "First Robotics Competition Team 3656"
         },
         {
           "position": "Primary Robot Driver",
           "relation": "on",
-          "organization": "Dreadbots (FRC 3656)",
-          "timePeriod": "February 2022 - June 2022"
+          "organization": "Dreadbots",
+          "timePeriod": "February 2022 - June 2022",
+          "extras": "First Robotics Competition Team 3656"
         },
         {
           "position": "Strategy/Scouting Student Lead",
           "relation": "on",
-          "organization": "Dreadbots (FRC 3656)",
-          "timePeriod": "June 2019 - June 2021"
+          "organization": "Dreadbots",
+          "timePeriod": "June 2019 - June 2021",
+          "extras": "First Robotics Competition Team 3656"
         }
       ]
     }

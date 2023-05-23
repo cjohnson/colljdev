@@ -10,7 +10,8 @@ export default function ResumeSection({ title, features }) {
       relation={feature.relation}
       organization={feature.organization}
       timePeriod={feature.timePeriod}
-      description={feature.description} />
+      description={feature.description}
+      extras={feature.extras} />
   );
 
   return (

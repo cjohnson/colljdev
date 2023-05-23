@@ -1,0 +1,36 @@
+{
+  "title": "Pursuing a career in Software Engineering.",
+  "description": "Collin Johnson is pursuing a degree in Computer Science and Engineering (CSE) at the University of Michigan College of Engineering. He is a Software Development Trainee intern at AdvantageCS.",
+  "image": {
+    "src": "/mugs/mug-homepage.jpg",
+    "alt": "Collin Johnson"
+  },
+  "iconInfo": {
+    "labels": [
+      {
+        "svg": "icons/location-sharp.svg",
+        "alt": "Location icon",
+        "content": "Ann Arbor, Michigan"
+      },
+      {
+        "svg": "icons/school-sharp.svg",
+        "alt": "School icon",
+        "content": "University of Michigan"
+      }
+    ],
+    "links": [
+      {
+        "href": "https://linkedin.com/in/collj/",
+        "svg": "socials/logo-linkedin.svg",
+        "alt": "LinkedIn logo",
+        "callToAction": "Connect on LinkedIn"
+      },
+      {
+        "href": "https://github.com/cjohnson/",
+        "svg": "socials/logo-github.svg",
+        "alt": "Github logo",
+        "callToAction": "Follow on Github"
+      }
+    ]
+  }
+}
