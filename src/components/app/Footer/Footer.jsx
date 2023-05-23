@@ -1,6 +1,9 @@
 import React from 'react';
 
+import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+
 import FooterLink from './FooterLink';
+import FooterIconLink from './FooterIconLink';
 
 export default function Footer() {
   return (
@@ -13,6 +16,10 @@ export default function Footer() {
           <FooterLink text="Source Code" href="https://github.com/cjohnson/colljdev/" />
           <FooterLink text="Github" href="https://github.com/cjohnson/" />
           <FooterLink text="LinkedIn" href="https://linkedin.com/in/collj/" />
+          <FooterIconLink
+            href="https://github.com/cjohnson/colljdev/releases/tag/v1.2.0/"
+            icon={faCodeBranch}
+            callToAction="v1.2.0" />
         </ul>
       </div>
     </footer>
