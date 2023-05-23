@@ -1,3 +1,5 @@
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+
 export default function getData() {
   return {
     title: 'Pursuing a career in Software Engineering.',
@@ -11,6 +13,7 @@ export default function getData() {
         {
           key: 0,
           svg: 'icons/location-sharp.svg',
+          icon: faLocationDot,
           alt: 'Location icon',
           content: 'Ann Arbor, Michigan'
         },

@@ -9,6 +9,7 @@ export default function HomeHeroIconInfo({ data }) {
       key={text.key}
       svg={text.svg}
       alt={text.alt}
+      icon={text.icon}
       infoText={text.content} />
   );
 
