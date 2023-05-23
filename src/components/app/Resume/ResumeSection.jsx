@@ -5,7 +5,7 @@ import ResumeFeature from './ResumeFeature';
 export default function ResumeSection({ title, features }) {
   const featuresList = features.map(
     feature => <ResumeFeature
-      key={feature.position}
+      key={feature.key}
       position={feature.position}
       relation={feature.relation}
       organization={feature.organization}

@@ -7,7 +7,7 @@ import resumeData from '@/data/resume';
 export default function Resume() {
   const sections = resumeData.sections.map(
     section => <ResumeSection
-      key={section.title}
+      key={section.key}
       title={section.title}
       features={section.features} />
   );
