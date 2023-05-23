@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 import HomeHeroIconInfo from './HomeHeroIconInfo';
 
-export default function HomeHero() {
-  const data = require('@/data/app/homeHeroData');
+import data from '@/data/app/homeHeroData';
 
+export default function HomeHero() {
   return (
     <section className="home-hero bg-white dark:bg-gray-900">
       <div className="home-hero-content grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
