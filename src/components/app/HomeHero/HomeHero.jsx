@@ -20,7 +20,7 @@ export default function HomeHero() {
           </p>
           <HomeHeroIconInfo data={data.iconInfo} />
         </div>
-        <div className="home-hero-image hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div className="home-hero-image hidden lg:mt-0 lg:col-span-5 lg:flex pointer-events-none select-none">
           <Image src={data.image.src} width={400} height={600} alt={data.image.alt} priority={true} />
         </div>
       </div>
