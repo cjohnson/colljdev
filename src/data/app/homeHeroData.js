@@ -1,5 +1,7 @@
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function getData() {
   return {
@@ -31,6 +33,7 @@ export default function getData() {
           key: 0,
           href: 'https://linkedin.com/in/collj/',
           svg: 'socials/logo-linkedin.svg',
+          icon: faLinkedin,
           alt: 'LinkedIn logo',
           callToAction: 'Connect on LinkedIn'
         },
@@ -38,6 +41,7 @@ export default function getData() {
           key: 1,
           href: 'https://github.com/cjohnson/',
           svg: 'socials/logo-github.svg',
+          icon: faGithub,
           alt: 'Github logo',
           callToAction: 'Follow on Github'
         }
