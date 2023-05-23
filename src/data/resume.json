@@ -41,18 +41,18 @@
       "title": "School Projects and Activities",
       "features": [
         {
+          "position": "Trombone Marcher",
+          "relation": "in the",
+          "organization": "Michigan Marching Band",
+          "timePeriod": "August 2022 - Present"
+        },
+        {
           "position": "Team Member",
           "relation": "on",
           "organization": "DTDC",
           "timePeriod": "August 2022 - December 2022",
           "description": "Proposed and presented a  project involving autonomous quadcopter drones. Used Python and Git collaboratively to deliver a markeable product.",
           "extras": "Michigan Engineering 100 Team"
-        },
-        {
-          "position": "Trombone Marcher",
-          "relation": "in the",
-          "organization": "Michigan Marching Band",
-          "timePeriod": "August 2022 - Present"
         },
         {
           "position": "Programming Student Lead",
