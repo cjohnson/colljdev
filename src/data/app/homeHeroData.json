@@ -8,11 +8,13 @@
   "iconInfo": {
     "labels": [
       {
+        "key": 0,
         "svg": "icons/location-sharp.svg",
         "alt": "Location icon",
         "content": "Ann Arbor, Michigan"
       },
       {
+        "key": 1,
         "svg": "icons/school-sharp.svg",
         "alt": "School icon",
         "content": "University of Michigan"
@@ -20,12 +22,14 @@
     ],
     "links": [
       {
+        "key": 0,
         "href": "https://linkedin.com/in/collj/",
         "svg": "socials/logo-linkedin.svg",
         "alt": "LinkedIn logo",
         "callToAction": "Connect on LinkedIn"
       },
       {
+        "key": 1,
         "href": "https://github.com/cjohnson/",
         "svg": "socials/logo-github.svg",
         "alt": "Github logo",

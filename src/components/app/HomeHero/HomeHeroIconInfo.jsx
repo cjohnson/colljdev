@@ -6,7 +6,7 @@ import IconLink from './IconLink';
 export default function HomeHeroIconInfo({ data }) {
   const iconLabels = data.labels.map(
     text => <IconLabel
-      key={text.infoText}
+      key={text.key}
       svg={text.svg}
       alt={text.alt}
       infoText={text.content} />
@@ -14,7 +14,7 @@ export default function HomeHeroIconInfo({ data }) {
 
   const iconLinks = data.links.map(
     link => <IconLink
-      key={link.callToAction}
+      key={link.key}
       href={link.href}
       svg={link.svg}
       alt={link.alt}
