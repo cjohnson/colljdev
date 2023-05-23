@@ -19,5 +19,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Built with [Next.js](https://nextjs.org/)
 - CSS with [Tailwind](https://tailwindcss.com/)
 - Designs with [Flowbite](https://flowbite.com/)
-- Icons from [Ionicons](https://ionic.io/ionicons/)
+- Icons from [Font Awesome](https://fontawesome.com/)
 - Page header icon is 'terminal' from [Ionicons](https://ionic.io/ionicons/)

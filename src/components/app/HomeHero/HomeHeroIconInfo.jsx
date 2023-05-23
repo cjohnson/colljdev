@@ -9,6 +9,7 @@ export default function HomeHeroIconInfo({ data }) {
       key={text.key}
       svg={text.svg}
       alt={text.alt}
+      icon={text.icon}
       infoText={text.content} />
   );
 
@@ -18,6 +19,7 @@ export default function HomeHeroIconInfo({ data }) {
       href={link.href}
       svg={link.svg}
       alt={link.alt}
+      icon={link.icon}
       callToAction={link.callToAction} />
   );
 
