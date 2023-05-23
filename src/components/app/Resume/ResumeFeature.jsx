@@ -8,7 +8,7 @@ export default function ResumeFeature({ position, relation, organization, timePe
         <span className="font-bold">{position}</span> {relation} <span className="font-bold">{organization}</span>
       </h2>
       <h3 className="resume-feature-extras tracking-normal font-semibold text-gray-500 dark:text-white">{extras}</h3>
-      <h4 className="resume-feature-time-period mb-2 tracking-tight font-light text-gray-500 dark:text-white">{timePeriod}</h4>
+      <h4 className="resume-feature-time-period mb-1 tracking-tight font-light text-gray-500 dark:text-white">{timePeriod}</h4>
       <p className="resume-feature-description font-normal text-gray-500 dark:text-white">{description}</p>
     </li>
   );
