@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function IconLink({ href, svg, icon, alt, callToAction, width = 24, height = 24 }) {
+export default function IconLink({ href, icon, callToAction, width = 24, height = 24 }) {
   return (
     <a className="information-list-link" target="_blank" href={href}>
       <div className="information-list-link-content flex flex-row space-x-2">
