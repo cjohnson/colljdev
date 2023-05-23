@@ -1,4 +1,5 @@
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 export default function getData() {
   return {
@@ -20,6 +21,7 @@ export default function getData() {
         {
           key: 1,
           svg: 'icons/school-sharp.svg',
+          icon: faGraduationCap,
           alt: 'School icon',
           content: 'University of Michigan'
         }
