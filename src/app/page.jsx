@@ -1,24 +1,20 @@
-import { React } from 'react';
-import ThemeProvider from '@/components/app/theme-provider';
+'use client';
+
+import { useContext } from 'react';
 
 import HomeHero from '@/components/app/HomeHero';
 import Resume from '@/components/app/Resume';
 import Footer from '@/components/app/Footer';
+import { ThemeContext } from '@/components/app/ThemeProvider';
 
 export default function Home() {
-  const themeContext = {
-    theme: 'dark',
-    tailwindTheme: 'dark',
-    iconTheme: 'ffffff',
-  };
+  const themeContext = useContext(ThemeContext);
 
   return (
-    <ThemeProvider value={themeContext}>
-      <div className={themeContext.tailwindTheme}>
-        <HomeHero themeContext={themeContext} />
-        <Resume />
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <div className={themeContext.tailwindTheme}>
+      <HomeHero />
+      <Resume />
+      <Footer />
+    </div>
   )
 }

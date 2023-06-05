@@ -1,6 +1,4 @@
-import React from 'react';
-
-export default function ResumeFeature({ themeContext, position, relation, organization, timePeriod, description, extras }) {
+export default function ResumeFeature({ position, relation, organization, timePeriod, description, extras }) {
   return (
     <li className="resume-feature mb-10 ml-4">
       <div className="vertical-timeline-point absolute w-3 lg:w-4 h-3 lg:h-4 bg-gray-300 rounded-full mt-[6.4px] lg:mt-[9.5px] -left-[6.57px] lg:-left-[8.88px] border border-white dark:border-gray-700 dark:bg-gray-400"></div>

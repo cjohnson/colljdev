@@ -1,11 +1,10 @@
-import React from 'react';
 import Image from 'next/image';
 
 import HomeHeroIconInfo from './HomeHeroIconInfo';
 
 import getData from '@/data/app/homeHeroData';
 
-export default function HomeHero({ themeContext }) {
+export default function HomeHero() {
   const data = getData();
 
   return (
@@ -18,7 +17,7 @@ export default function HomeHero({ themeContext }) {
           <p className="home-hero-description max-w-2xl mb-6 font-medium text-gray-500 lg:mb-6 md:text-lg lg:text-xl dark:text-gray-400">
             {data.description}
           </p>
-          <HomeHeroIconInfo themeContext={themeContext} data={data.iconInfo} />
+          <HomeHeroIconInfo data={data.iconInfo} />
         </div>
         <div className="home-hero-image hidden lg:mt-0 lg:col-span-5 lg:flex pointer-events-none select-none">
           <Image className="rounded-lg" src={data.image.src} width={400} height={600} alt={data.image.alt} priority={true} />

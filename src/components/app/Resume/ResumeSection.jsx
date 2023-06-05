@@ -1,12 +1,9 @@
-import React from 'react';
-
 import ResumeFeature from './ResumeFeature';
 
-export default function ResumeSection({ themeContext, title, features }) {
+export default function ResumeSection({ title, features }) {
   const featuresList = features.map(
     feature => <ResumeFeature
       key={feature.key}
-      themeContext={themeContext}
       position={feature.position}
       relation={feature.relation}
       organization={feature.organization}
