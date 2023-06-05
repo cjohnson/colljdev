@@ -21,6 +21,9 @@ export default function HomeHero() {
           <p className="home-hero-description max-w-2xl mb-6 font-medium text-gray-500 lg:mb-6 md:text-lg lg:text-xl dark:text-gray-400">
             {data.description}
           </p>
+          <div className='home-hero-image-mobile lg:hidden mb-6'>
+            <Image className="rounded-full" src={data.imageMobile.src} width={100} height={100} alt={data.imageMobile.alt} priority={true} />
+          </div>
           <HomeHeroIconInfo data={data.iconInfo} />
         </div>
         <div className="home-hero-image hidden lg:mt-0 lg:col-span-5 lg:flex pointer-events-none select-none">
