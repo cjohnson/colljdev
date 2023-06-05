@@ -17,6 +17,7 @@ export default function HomeHeroIconInfo({ themeContext, data }) {
   const iconLinks = data.links.map(
     link => <IconLink
       key={link.key}
+      themeContext={themeContext}
       href={link.href}
       svg={link.svg}
       alt={link.alt}
