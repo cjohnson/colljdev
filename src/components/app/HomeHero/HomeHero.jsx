@@ -6,12 +6,9 @@ import HomeHeroIconInfo from './HomeHeroIconInfo';
 
 import ThemeSwitcher from '@/components/app/ThemeSwitcher';
 import getData from '@/data/app/homeHeroData';
-import { ThemeContext } from '../ThemeProvider';
 
 export default function HomeHero() {
   const data = getData();
-
-  const theme = useContext(ThemeContext);
 
   return (
     <section className="home-hero bg-white dark:bg-gray-900">
