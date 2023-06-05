@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext } from 'react';
+import { createContext, useState } from 'react';
 
 export const ThemeContext = createContext({});
 
@@ -9,15 +9,22 @@ export const Themes = {
   DarkTheme: 'dark',
 };
 
-function useTheme(theme) {
-  return {
+export default function ThemeProvider({ children }) {
+  const [theme, setTheme] = useState(Themes.LightTheme);
+
+  const themeBody = {
     tailwindTheme: theme === 'dark' ? 'dark' : '',
     iconStyle: theme === 'dark' ? 'text-white' : '',
+    theme: theme,
+    swapTheme: () => {
+      if (theme === Themes.DarkTheme) {
+        setTheme(Themes.LightTheme);
+        return;
+      }
+
+      setTheme(Themes.DarkTheme);
+    }
   };
-}
 
-export default function ThemeProvider({ children }) {
-  const theme = useTheme(Themes.LightTheme);
-
-  return <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>;
+  return <ThemeContext.Provider value={themeBody}>{children}</ThemeContext.Provider>;
 }

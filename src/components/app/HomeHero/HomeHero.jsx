@@ -1,11 +1,16 @@
+import { useContext } from 'react';
+
 import Image from 'next/image';
 
 import HomeHeroIconInfo from './HomeHeroIconInfo';
 
 import getData from '@/data/app/homeHeroData';
+import { ThemeContext } from '../ThemeProvider';
 
 export default function HomeHero() {
   const data = getData();
+
+  const theme = useContext(ThemeContext);
 
   return (
     <section className="home-hero bg-white dark:bg-gray-900">
@@ -23,6 +28,7 @@ export default function HomeHero() {
           <Image className="rounded-lg" src={data.image.src} width={400} height={600} alt={data.image.alt} priority={true} />
         </div>
       </div>
+      <button onClick={theme.swapTheme}>Click me</button>
     </section>
   );
 }
