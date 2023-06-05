@@ -1,5 +1,3 @@
-import React from 'react';
-
 import IconLabel from './IconLabel';
 import IconLink from './IconLink';
 

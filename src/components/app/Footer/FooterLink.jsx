@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function FooterLink({ text, href }) {
   return (
     <li className="page-footer-link">

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ResumeSection from './ResumeSection';
 
 import resumeData from '@/data/resume';
