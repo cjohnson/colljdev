@@ -7,7 +7,11 @@ export default function getData() {
     description: 'Collin Johnson is pursuing a degree in Computer Science and Engineering (CSE) at the University of Michigan College of Engineering. He is a Software Development Trainee intern at AdvantageCS.',
     image: {
       src: '/mugs/mug-homepage.jpg',
-      alt: 'Collin Johnson'
+      alt: 'Collin Johnson',
+    },
+    imageMobile: {
+      src: '/mugs/mug-homepage-mobile.jpg',
+      alt: 'Collin Johnson',
     },
     iconInfo: {
       labels: [
