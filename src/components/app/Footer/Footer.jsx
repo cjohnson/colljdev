@@ -15,9 +15,9 @@ export default function Footer() {
           <FooterLink text="Github" href="https://github.com/cjohnson/" />
           <FooterLink text="LinkedIn" href="https://linkedin.com/in/collj/" />
           <FooterIconLink
-            href="https://github.com/cjohnson/colljdev/releases/tag/v1.2.0/"
+            href="https://github.com/cjohnson/colljdev/releases/tag/v1.3.0/"
             icon={faCodeBranch}
-            callToAction="v1.2.0" />
+            callToAction="v1.3.0" />
         </ul>
       </div>
     </footer>
