@@ -7,7 +7,7 @@ export const ThemeContext = createContext({});
 function Theme(theme) {
   return {
     tailwindTheme: theme === 'dark' ? 'dark' : '',
-    iconStyle: theme === 'dark' ? { color: 'ffffff' } : {},
+    iconStyle: theme === 'dark' ? 'text-white' : '',
   };
 }
 
