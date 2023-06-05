@@ -3,10 +3,11 @@ import React from 'react';
 import IconLabel from './IconLabel';
 import IconLink from './IconLink';
 
-export default function HomeHeroIconInfo({ data }) {
+export default function HomeHeroIconInfo({ themeContext, data }) {
   const iconLabels = data.labels.map(
     text => <IconLabel
       key={text.key}
+      themeContext={themeContext}
       svg={text.svg}
       alt={text.alt}
       icon={text.icon}
