@@ -7,7 +7,7 @@ import FooterIconLink from './FooterIconLink';
 
 export default function Footer() {
   return (
-    <footer className="bg-white rounded-lg dark:bg-gray-800">
+    <footer className="bg-white dark:bg-gray-800">
       <div className="page-footer w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="page-footer-main-content text-sm text-gray-500 sm:text-center dark:text-gray-400">
           Collin Johnson 2023 - This page is Open Source.
