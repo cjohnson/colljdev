@@ -7,11 +7,18 @@ interface FooterIconLinkProps {
   href: string,
   icon: IconProp,
   callToAction: string,
-  width: number,
-  height: number,
+  width?: number,
+  height?: number,
+}
+const defaultProps: FooterIconLinkProps = {
+  href: '',
+  icon: 'function',
+  callToAction: '',
+  width: 12,
+  height: 12,
 }
 
-const FooterIconLink: React.FC<FooterIconLinkProps> = ({ href, icon, callToAction, width = 12, height = 12 }) => {
+const FooterIconLink: React.FC<FooterIconLinkProps> = ({ href, icon, callToAction, width, height }) => {
   return (
     <a className='page-footer-icon-link' target="_blank" href={href}>
       <div className='flex flex-row space-x-1 place-items-center'>
@@ -21,5 +28,6 @@ const FooterIconLink: React.FC<FooterIconLinkProps> = ({ href, icon, callToActio
     </a>
   );
 }
+FooterIconLink.defaultProps = defaultProps;
 
 export default FooterIconLink;
