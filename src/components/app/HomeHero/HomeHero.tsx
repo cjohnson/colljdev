@@ -12,15 +12,15 @@ export default function HomeHero() {
   const data = getData();
 
   const iconLabels = data.iconInfo.labels.map(
-    text => <IconLabel
-      key={text.key}
+    (text, index) => <IconLabel
+      key={index}
       icon={text.icon}
       infoText={text.content} />
   );
 
   const iconLinks = data.iconInfo.links.map(
-    link => <IconLink
-      key={link.key}
+    (link, index) => <IconLink
+      key={index}
       href={link.href}
       icon={link.icon}
       callToAction={link.callToAction} />

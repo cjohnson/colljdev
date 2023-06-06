@@ -16,25 +16,21 @@ export default function getData() {
     iconInfo: {
       labels: [
         {
-          key: 0,
           icon: faLocationDot,
           content: 'Ann Arbor, Michigan'
         },
         {
-          key: 1,
           icon: faGraduationCap,
           content: 'University of Michigan'
         }
       ],
       links: [
         {
-          key: 0,
           href: 'https://linkedin.com/in/collj/',
           icon: faLinkedin,
           callToAction: 'Connect on LinkedIn'
         },
         {
-          key: 1,
           href: 'https://github.com/cjohnson/',
           icon: faGithub,
           callToAction: 'Follow on Github'

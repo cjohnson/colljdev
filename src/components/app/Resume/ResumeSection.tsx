@@ -1,9 +1,18 @@
-import ResumeFeature from './ResumeFeature';
+import React from 'react';
 
-export default function ResumeSection({ title, features }) {
+import ResumeFeature, { ResumeFeatureProps } from './ResumeFeature';
+
+interface ResumeSectionProps {
+  title: string,
+  features: ResumeFeatureProps[],
+}
+
+const ResumeSection: React.FC<ResumeSectionProps> = (props: ResumeSectionProps) => {
+  const { title, features } = props;
+
   const featuresList = features.map(
-    feature => <ResumeFeature
-      key={feature.key}
+    (feature, index) => <ResumeFeature
+      key={index}
       position={feature.position}
       relation={feature.relation}
       organization={feature.organization}
@@ -25,3 +34,5 @@ export default function ResumeSection({ title, features }) {
     </div>
   );
 }
+
+export default ResumeSection;
