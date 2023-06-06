@@ -1,9 +1,11 @@
+import React from 'react';
+
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 
 import FooterLink from './FooterLink';
 import FooterIconLink from './FooterIconLink';
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-white dark:bg-gray-800">
       <div className="page-footer w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
@@ -23,3 +25,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;

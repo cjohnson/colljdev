@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { useContext } from 'react';
 
 import HomeHero from '@/components/app/HomeHero';

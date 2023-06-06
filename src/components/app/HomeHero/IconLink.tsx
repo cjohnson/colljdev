@@ -1,10 +1,22 @@
+import React from 'react';
 import { useContext } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { ThemeContext } from '../ThemeProvider';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-export default function IconLink({ href, icon, callToAction, width = 24, height = 24 }) {
+interface IconLinkProps {
+  href: string,
+  icon: IconProp,
+  callToAction: string,
+  width?: number,
+  height?: number,
+}
+
+const IconLink: React.FC<IconLinkProps> = (props: IconLinkProps) => {
+  const { href, icon, callToAction, width = 24, height = 24 } = props;
+
   const theme = useContext(ThemeContext);
 
   return (
@@ -18,3 +30,5 @@ export default function IconLink({ href, icon, callToAction, width = 24, height 
     </a>
   );
 }
+
+export default IconLink;

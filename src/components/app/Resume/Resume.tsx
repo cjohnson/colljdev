@@ -1,11 +1,15 @@
+import React from 'react';
+
 import ResumeSection from './ResumeSection';
 
-import resumeData from '@/data/resume';
+import getResume from '@/data/app/resume';
 
 export default function Resume() {
+  const resumeData = getResume();
+
   const sections = resumeData.sections.map(
-    section => <ResumeSection
-      key={section.key}
+    (section, index) => <ResumeSection
+      key={index}
       title={section.title}
       features={section.features} />
   );
