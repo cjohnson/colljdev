@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
 
 import { createContext, useState } from 'react';
 
@@ -8,7 +8,7 @@ interface ITheme {
   tailwindTheme: string,
   iconStyle: string,
   theme: string,
-  swapTheme: Function,
+  swapTheme: MouseEventHandler<HTMLButtonElement>,
 }
 
 export const ThemeContext = createContext<ITheme>({
