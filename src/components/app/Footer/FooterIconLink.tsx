@@ -3,14 +3,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-interface FooterIconLinkProps {
+interface IFooterIconLinkProps {
   href: string,
   icon: IconProp,
   callToAction: string,
   width?: number,
   height?: number,
 }
-const defaultProps: FooterIconLinkProps = {
+const defaultProps: IFooterIconLinkProps = {
   href: '',
   icon: 'function',
   callToAction: '',
@@ -18,7 +18,7 @@ const defaultProps: FooterIconLinkProps = {
   height: 12,
 }
 
-const FooterIconLink: React.FC<FooterIconLinkProps> = ({ href, icon, callToAction, width, height }) => {
+const FooterIconLink: React.FC<IFooterIconLinkProps> = ({ href, icon, callToAction, width, height }) => {
   return (
     <a className='page-footer-icon-link' target="_blank" href={href}>
       <div className='flex flex-row space-x-1 place-items-center'>
