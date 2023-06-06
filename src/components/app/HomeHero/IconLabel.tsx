@@ -1,10 +1,21 @@
+import React from 'react';
 import { useContext } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 import { ThemeContext } from '../ThemeProvider';
 
-export default function IconLabel({ icon, infoText, width = 24, height = 24 }) {
+interface IconLabelProps {
+  icon: IconProp,
+  infoText: string,
+  width?: number,
+  height?: number,
+}
+
+const IconLabel: React.FC<IconLabelProps> = (props: IconLabelProps) => {
+  const { icon, infoText, width = 24, height = 24 } = props;
+
   const theme = useContext(ThemeContext);
 
   return (
@@ -16,3 +27,5 @@ export default function IconLabel({ icon, infoText, width = 24, height = 24 }) {
     </div>
   );
 }
+
+export default IconLabel;

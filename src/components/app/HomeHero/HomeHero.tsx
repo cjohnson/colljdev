@@ -1,14 +1,30 @@
-import { useContext } from 'react';
+import React from 'react';
 
 import Image from 'next/image';
 
-import HomeHeroIconInfo from './HomeHeroIconInfo';
+import IconLabel from './IconLabel';
+import IconLink from './IconLink';
 
 import ThemeSwitcher from '@/components/app/ThemeSwitcher';
 import getData from '@/data/app/homeHeroData';
 
 export default function HomeHero() {
   const data = getData();
+
+  const iconLabels = data.iconInfo.labels.map(
+    text => <IconLabel
+      key={text.key}
+      icon={text.icon}
+      infoText={text.content} />
+  );
+
+  const iconLinks = data.iconInfo.links.map(
+    link => <IconLink
+      key={link.key}
+      href={link.href}
+      icon={link.icon}
+      callToAction={link.callToAction} />
+  );
 
   return (
     <section className="home-hero bg-white dark:bg-gray-900">
@@ -24,7 +40,10 @@ export default function HomeHero() {
           <div className='home-hero-image-mobile lg:hidden mb-6'>
             <Image className="rounded-full" src={data.imageMobile.src} width={100} height={100} alt={data.imageMobile.alt} priority={true} />
           </div>
-          <HomeHeroIconInfo data={data.iconInfo} />
+          <div className="home-hero-brief-information flex flex-col space-y-3 md:space-y-5 items-start">
+            {iconLabels}
+            {iconLinks}
+          </div>
         </div>
         <div className="home-hero-image hidden lg:mt-0 lg:col-span-5 lg:flex pointer-events-none select-none">
           <Image className="rounded-lg" src={data.image.src} width={400} height={600} alt={data.image.alt} priority={true} />

@@ -1,8 +1,22 @@
 'use client';
 
+import React from 'react';
+
 import { createContext, useState } from 'react';
 
-export const ThemeContext = createContext({});
+interface ITheme {
+  tailwindTheme: string,
+  iconStyle: string,
+  theme: string,
+  swapTheme: Function,
+}
+
+export const ThemeContext = createContext<ITheme>({
+  tailwindTheme: '',
+  iconStyle: '',
+  theme: '',
+  swapTheme: undefined,
+});
 
 export const Themes = {
   LightTheme: 'light',
@@ -12,7 +26,7 @@ export const Themes = {
 export default function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(Themes.LightTheme);
 
-  const themeBody = {
+  const themeBody: ITheme = {
     tailwindTheme: theme === 'dark' ? 'dark' : '',
     iconStyle: theme === 'dark' ? 'text-white' : '',
     theme: theme,
