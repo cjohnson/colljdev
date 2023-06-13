@@ -6,7 +6,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 import { ThemeContext } from '../ThemeProvider';
 
-interface IconLabelProps {
+export interface IconLabelProps {
   icon: IconProp,
   infoText: string,
   width?: number,
