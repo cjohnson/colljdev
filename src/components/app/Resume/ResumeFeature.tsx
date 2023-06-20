@@ -9,7 +9,7 @@ export interface ResumeFeatureProps {
   extras?: string,
 }
 
-const ResumeFeature: React.FC<ResumeFeatureProps> = (props: ResumeFeatureProps) => {
+export default function ResumeFeature(props: ResumeFeatureProps): JSX.Element {
   const { position, relation, organization, timePeriod, description, extras } = props;
 
   return (
@@ -24,5 +24,3 @@ const ResumeFeature: React.FC<ResumeFeatureProps> = (props: ResumeFeatureProps) 
     </li>
   );
 }
-
-export default ResumeFeature;

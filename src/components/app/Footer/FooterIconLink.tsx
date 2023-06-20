@@ -11,7 +11,7 @@ interface IFooterIconLinkProps {
   height?: number,
 }
 
-const FooterIconLink: React.FC<IFooterIconLinkProps> = (props: IFooterIconLinkProps) => {
+export default function FooterIconLink(props: IFooterIconLinkProps): JSX.Element {
   const { href, icon, callToAction, width = 12, height = 12 } = props;
 
   return (
@@ -23,5 +23,3 @@ const FooterIconLink: React.FC<IFooterIconLinkProps> = (props: IFooterIconLinkPr
     </a>
   );
 }
-
-export default FooterIconLink;

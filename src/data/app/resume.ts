@@ -1,4 +1,18 @@
-export default function getResume() {
+export interface Resume {
+  sections?: {
+    title?: string,
+    features?: {
+      position?: string,
+      relation?: string,
+      organization?: string,
+      timePeriod?: string,
+      description?: string,
+      extras?: string,
+    }[],
+  }[],
+}
+
+export default function getResume(): Resume {
   return {
     sections: [
       {

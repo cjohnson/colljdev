@@ -13,7 +13,7 @@ export const metadata = {
   description: 'Collin Johnson\'s resume: pursuing a career in Software Engineering.',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }): JSX.Element {
   return (
     <html lang="en">
       <body className='main-content-body'>

@@ -8,7 +8,7 @@ import IconLink from './IconLink';
 import ThemeSwitcher from '@/components/app/ThemeSwitcher';
 import getData from '@/data/app/homeHeroData';
 
-export default function HomeHero() {
+export default function HomeHero(): JSX.Element {
   const data = getData();
 
   const iconLabels = data.iconInfo.labels.map(
