@@ -7,7 +7,7 @@ interface ResumeSectionProps {
   features: ResumeFeatureProps[],
 }
 
-const ResumeSection: React.FC<ResumeSectionProps> = (props: ResumeSectionProps) => {
+export default function ResumeSection(props: ResumeSectionProps): JSX.Element {
   const { title, features } = props;
 
   const featuresList = features.map(
@@ -34,5 +34,3 @@ const ResumeSection: React.FC<ResumeSectionProps> = (props: ResumeSectionProps) 
     </div>
   );
 }
-
-export default ResumeSection;

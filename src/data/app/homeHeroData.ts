@@ -1,7 +1,31 @@
-import { faLocationDot, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faGraduationCap, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-export default function getData() {
+export interface HomeHero {
+  title?: string,
+  description?: string,
+  image?: {
+    src?: string,
+    alt?: string,
+  },
+  imageMobile?: {
+    src?: string,
+    alt?: string,
+  },
+  iconInfo?: {
+    labels?: {
+      icon?: IconDefinition,
+      content?: string,
+    }[],
+    links?: {
+      icon?: IconDefinition,
+      href?: string,
+      callToAction?: string,
+    }[],
+  }
+}
+
+export default function getData(): HomeHero {
   return {
     title: 'Pursuing a career in Software Engineering.',
     description: 'Collin Johnson is pursuing a degree in Computer Science and Engineering (CSE) at the University of Michigan College of Engineering. He is a Software Development Trainee intern at AdvantageCS.',

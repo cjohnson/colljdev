@@ -6,7 +6,7 @@ import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { ThemeContext, Themes } from './ThemeProvider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const ThemeSwitcher: React.FC = () => {
+export default function ThemeSwitcher(): JSX.Element {
   const theme = useContext(ThemeContext);
 
   return <div className='grid w-full justify-items-end p-1'>
@@ -20,5 +20,3 @@ const ThemeSwitcher: React.FC = () => {
     </div>
   </div>;
 }
-
-export default ThemeSwitcher;

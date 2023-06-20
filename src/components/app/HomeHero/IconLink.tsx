@@ -14,7 +14,7 @@ interface IconLinkProps {
   height?: number,
 }
 
-const IconLink: React.FC<IconLinkProps> = (props: IconLinkProps) => {
+export default function IconLink(props: IconLinkProps): JSX.Element {
   const { href, icon, callToAction, width = 24, height = 24 } = props;
 
   const theme = useContext(ThemeContext);
@@ -30,5 +30,3 @@ const IconLink: React.FC<IconLinkProps> = (props: IconLinkProps) => {
     </a>
   );
 }
-
-export default IconLink;

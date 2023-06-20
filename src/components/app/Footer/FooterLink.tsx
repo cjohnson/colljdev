@@ -5,7 +5,7 @@ interface IFooterLinkProps {
   href: string,
 }
 
-const FooterLink: React.FC<IFooterLinkProps> = (props: IFooterLinkProps) => {
+export default function FooterLink(props: IFooterLinkProps): JSX.Element {
   const { text, href } = props;
 
   return (
@@ -14,5 +14,3 @@ const FooterLink: React.FC<IFooterLinkProps> = (props: IFooterLinkProps) => {
     </li>
   );
 }
-
-export default FooterLink;

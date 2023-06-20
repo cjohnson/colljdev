@@ -4,7 +4,7 @@ import ResumeSection from './ResumeSection';
 
 import getResume from '@/data/app/resume';
 
-export default function Resume() {
+export default function Resume(): JSX.Element {
   const resumeData = getResume();
 
   const sections = resumeData.sections.map(

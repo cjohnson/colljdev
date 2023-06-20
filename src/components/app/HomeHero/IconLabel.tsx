@@ -13,7 +13,7 @@ export interface IconLabelProps {
   height?: number,
 }
 
-const IconLabel: React.FC<IconLabelProps> = (props: IconLabelProps) => {
+export default function IconLabel(props: IconLabelProps): JSX.Element {
   const { icon, infoText, width = 24, height = 24 } = props;
 
   const theme = useContext(ThemeContext);
@@ -27,5 +27,3 @@ const IconLabel: React.FC<IconLabelProps> = (props: IconLabelProps) => {
     </div>
   );
 }
-
-export default IconLabel;
